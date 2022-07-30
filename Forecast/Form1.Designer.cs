@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.CmbChekDate = new System.Windows.Forms.ComboBox();
             this.CmbChekCity = new System.Windows.Forms.ComboBox();
             this.BtnPogoda = new System.Windows.Forms.Button();
             this.TbxPogoda = new System.Windows.Forms.TextBox();
             this.LbStatus = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -57,14 +57,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Выбрать город";
             // 
-            // CmbChekDate
-            // 
-            this.CmbChekDate.FormattingEnabled = true;
-            this.CmbChekDate.Location = new System.Drawing.Point(667, 193);
-            this.CmbChekDate.Name = "CmbChekDate";
-            this.CmbChekDate.Size = new System.Drawing.Size(121, 21);
-            this.CmbChekDate.TabIndex = 2;
-            // 
             // CmbChekCity
             // 
             this.CmbChekCity.FormattingEnabled = true;
@@ -81,6 +73,7 @@
             this.BtnPogoda.TabIndex = 4;
             this.BtnPogoda.Text = "Получить данные о погоде";
             this.BtnPogoda.UseVisualStyleBackColor = true;
+            this.BtnPogoda.Click += new System.EventHandler(this.BtnPogoda_Click);
             // 
             // TbxPogoda
             // 
@@ -100,16 +93,23 @@
             this.LbStatus.TabIndex = 6;
             this.LbStatus.Text = " ";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(648, 195);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(140, 20);
+            this.dateTimePicker1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.LbStatus);
             this.Controls.Add(this.TbxPogoda);
             this.Controls.Add(this.BtnPogoda);
             this.Controls.Add(this.CmbChekCity);
-            this.Controls.Add(this.CmbChekDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -124,11 +124,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox CmbChekDate;
         private System.Windows.Forms.ComboBox CmbChekCity;
         private System.Windows.Forms.Button BtnPogoda;
         private System.Windows.Forms.TextBox TbxPogoda;
         private System.Windows.Forms.Label LbStatus;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
